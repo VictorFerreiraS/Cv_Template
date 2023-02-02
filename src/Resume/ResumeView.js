@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, CardMedia, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 
 import BackEndView from "./backEnd/BackEndView";
@@ -13,36 +13,66 @@ import ProjectsView from "./projects/ProjectsView";
 
 export default function ResumeView(dev) {
   return (
-    <Box display={"flex"} justifyContent={"center"}>
-      <Grid>
+    <CardMedia image="./images/pexels-hasan-albari-1229861.jpg">
+      <Box display={"flex"} justifyContent={"center"}>
         {/* MAIN BOX with name and info*/}
         <Box maxWidth={"820px"}>
           {/* Name box */}
-          <NameBoxView />
-          <Box>
-            {/* Dados Pessoais Box */}
-            <PersonalInfoView />
-            {/* FORMAÇÃO BOX */}
-            <DegreesView />
-            {/* DOMÍNIO */}
-            <Box>
-              {/* BACKEND */}
-              <BackEndView />
-              {/* FRONT END */}
-              <FrontEndView />
+          <Paper>
+            <NameBoxView />
+          </Paper>
 
-              {/* IDIOMAS */}
-              <LanguagesView />
-              {/* CERTIFICADOS */}
-              <CertificatesView />
-              {/* PROJETOS */}
-              <ProjectsView />
-            </Box>
-          </Box>
-          {/* CONHECIMENTOS E INTERESSES  */}
-          <KnowledgeAndInterests />
+          {/* INFORMATION BOX */}
+          <Paper>
+            {/* DADOS PESSOAIS E FORMAÇÃO BOX*/}
+            <Grid container>
+              <Grid item md={6} backgroundColor={"blue"}>
+                <PersonalInfoView />
+              </Grid>
+              <Grid item md={6}>
+                <DegreesView />
+              </Grid>
+            </Grid>
+
+            {/* DOMÍNIO */}
+            <Grid display={"flex"} justifyContent={"center"} margin={"10px"}>
+              <Typography className="titles">DOMINIO</Typography>
+            </Grid>
+
+            <Grid container>
+              {/* LEFT SIDE */}
+              <Grid item md={5.75} backgroundColor="green">
+                <Box height={"200px"}>
+                  <BackEndView />
+                </Box>
+                  <LanguagesView />
+                  <CertificatesView />
+              </Grid>
+
+              {/* CENTRAL LINE */}
+              <Grid item md={0.5}>
+                <CardMedia
+                  backgroundColor={"green"}
+                  padding={"5px"}
+                ></CardMedia>
+              </Grid>
+
+              {/* RIGHT SIDE */}
+              <Grid item md={5.75}>
+              <Box height={"200px"}>
+                <FrontEndView />
+                </Box>
+                <ProjectsView />
+              </Grid>
+            </Grid>
+
+            <Grid>
+              {/* CONHECIMENTOS E INTERESSES  */}
+              <KnowledgeAndInterests />
+            </Grid>
+          </Paper>
         </Box>
-      </Grid>
-    </Box>
+      </Box>
+    </CardMedia>
   );
 }

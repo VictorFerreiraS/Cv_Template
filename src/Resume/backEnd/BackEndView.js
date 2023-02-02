@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function BackEndView() {
   return (
-    <Box>
+    <Box display={"flex"} justifyContent={"flex-end"} >
+    <Box > 
     <Typography className="title">BACK END</Typography>{" "}
-    <Box>
       <Typography>Java</Typography>
       <Typography>POO</Typography>
       <Typography>SpringBoot</Typography>
