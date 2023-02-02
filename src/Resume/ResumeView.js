@@ -1,88 +1,48 @@
-import { Container, Link, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Grid } from "@mui/material";
 import React from "react";
 
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import BackEndView from "./backEnd/BackEndView";
+import CertificatesView from "./certificates/CertificatesView";
+import DegreesView from "./degrees/DegreesView";
+import FrontEndView from "./frontEnd/FrontEndView";
+import KnowledgeAndInterests from "./knowledge/KnowledgeAndInterests";
+import LanguagesView from "./languages/LanguagesView";
+import NameBoxView from "./nameBox/NameBoxView";
+import PersonalInfoView from "./personalInfo/PersonalInfoView";
+import ProjectsView from "./projects/ProjectsView";
 
 export default function ResumeView(dev) {
   return (
     <Box display={"flex"} justifyContent={"center"}>
-      {/* MAIN BOX */}
-      <Box maxWidth={"820px"}>
-        {/* Name box */}
-        <Container align="center">
-          <Container>
-            <Typography variant="h5" className="name-tag" gutterBottom>
-              Victor Fagundes Silva Ferreira
-            </Typography>
-            <Typography variant="h6" className="name-tag" gutterBottom>
-              Desenvolverdor - Full Stack
-            </Typography>
-          </Container>
-        </Container>
-
-        <Box>
-          {/* Dados Pessoais Box */}
+      <Grid>
+        {/* MAIN BOX with name and info*/}
+        <Box maxWidth={"820px"}>
+          {/* Name box */}
+          <NameBoxView />
           <Box>
-            <Typography className="titles">DADOS PESSOAIS</Typography>
+            {/* Dados Pessoais Box */}
+            <PersonalInfoView />
+            {/* FORMAÇÃO BOX */}
+            <DegreesView />
+            {/* DOMÍNIO */}
             <Box>
-              <PersonOutlineOutlinedIcon />
-              <Typography>19 anos </Typography>
-              <Typography>São João del Rei - MG </Typography>
-            </Box>
-          </Box>
-          {/* FORMAÇÃO BOX */}
-          <Box>
-            <Typography className="titles">FORMAÇÃO</Typography>
-            <Typography>Cursando Ciêcia da Computação</Typography>
-            <Typography>Descomplica Faculdade</Typography>
-          </Box>
-
-          {/* DOMÍNIO */}
-          <Box>
-            {/* BACKEND */}
-            <Box>
-              <Typography className="title">BACK END</Typography>{" "}
-              <Box>
-                <Typography>Java</Typography>
-                <Typography>POO</Typography>
-                <Typography>SpringBoot</Typography>
-                <Typography>MongoDb</Typography>
-                <Typography>PostGress</Typography>
-              </Box>
-            </Box>
-            {/* FRONT END */}
-            <Box>
-              <Typography className="title">FRONT END</Typography>
-              <Box>
-                <Typography>React</Typography>
-                <Typography>CSS / Sass / Material Ui</Typography>
-              </Box>
+              {/* BACKEND */}
+              <BackEndView />
+              {/* FRONT END */}
+              <FrontEndView />
 
               {/* IDIOMAS */}
-              <Box>
-                <Typography>Inglês</Typography>
-                <Typography>FALA: Avançado</Typography>
-                <Typography>Inglês: Avançado</Typography>
-                <Typography>Inglês: Avançado</Typography>
-              </Box>
+              <LanguagesView />
               {/* CERTIFICADOS */}
-              <Box>
-                <Typography>Linkedin 4</Typography>
-                <Typography>Destaques: React, Java POO</Typography>
-              </Box>
-
+              <CertificatesView />
               {/* PROJETOS */}
-              <Box>
-                <Typography className="title"> PROJETOS</Typography>
-                <Typography>Memory Game: <Link>https://github.com/VictorFerreiraS/magic-memory</Link></Typography>
-                <Typography>Memory Game Api: <Link>https://github.com/VictorFerreiraS/MagicMemories-Api</Link></Typography>
-                <Typography>Former Apple Landing Page <Link>https://github.com/VictorFerreiraS/apple-clone</Link></Typography>
-              </Box>
+              <ProjectsView />
             </Box>
           </Box>
+          {/* CONHECIMENTOS E INTERESSES  */}
+          <KnowledgeAndInterests />
         </Box>
-      </Box>
+      </Grid>
     </Box>
   );
 }
