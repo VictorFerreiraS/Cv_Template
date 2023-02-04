@@ -1,5 +1,4 @@
-.central-line {
-  width: 2px;
-  height: 400px;
+.name-underline {
+  height: 2px;
   background: radial-gradient(gray, transparent);
 }

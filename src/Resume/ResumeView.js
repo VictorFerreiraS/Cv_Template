@@ -1,4 +1,11 @@
-import { Box, CardMedia, Grid, Paper, Typography } from "@mui/material";
+import {
+  Box,
+  CardMedia,
+  Container,
+  Grid,
+  Paper,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
 import BackEndView from "./backEnd/BackEndView";
@@ -10,6 +17,8 @@ import LanguagesView from "./languages/LanguagesView";
 import NameBoxView from "./nameBox/NameBoxView";
 import PersonalInfoView from "./personalInfo/PersonalInfoView";
 import ProjectsView from "./projects/ProjectsView";
+
+import "./resume.css";
 
 export default function ResumeView(dev) {
   return (
@@ -39,28 +48,25 @@ export default function ResumeView(dev) {
               <Typography className="titles">DOMINIO</Typography>
             </Grid>
 
-            <Grid container>
+            <Grid container columns={21}>
               {/* LEFT SIDE */}
-              <Grid item md={5.75} backgroundColor="green">
+              <Grid item md={10} backgroundColor="green">
                 <Box height={"200px"}>
                   <BackEndView />
                 </Box>
-                  <LanguagesView />
-                  <CertificatesView />
+                <LanguagesView />
+                <CertificatesView />
               </Grid>
 
               {/* CENTRAL LINE */}
-              <Grid item md={0.5}>
-                <CardMedia
-                  backgroundColor={"green"}
-                  padding={"5px"}
-                ></CardMedia>
+              <Grid item md={1} align={"center"}>
+                <Box width={"2px"} className="central-line" />
               </Grid>
 
               {/* RIGHT SIDE */}
-              <Grid item md={5.75}>
-              <Box height={"200px"}>
-                <FrontEndView />
+              <Grid item md={10}>
+                <Box height={"200px"}>
+                  <FrontEndView />
                 </Box>
                 <ProjectsView />
               </Grid>
