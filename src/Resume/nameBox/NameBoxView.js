@@ -5,13 +5,19 @@ import "./nameBox.css";
 
 export default function NameBoxView() {
   return (
-    <Container align="center">
+    <Container className="name-box" align="center" >
       <Container>
-        <Typography variant="h5" className="name-tag" gutterBottom>
+        <Typography
+          variant="h4"
+          gutterBottom
+        >
           Victor Fagundes Silva Ferreira
         </Typography>
         <Container className="name-underline" />
-        <Typography variant="h6" className="name-tag" gutterBottom>
+        <Typography
+          variant="h4"
+          gutterBottom
+        >
           Desenvolverdor - Full Stack
         </Typography>
       </Container>

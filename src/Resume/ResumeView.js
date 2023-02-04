@@ -1,11 +1,4 @@
-import {
-  Box,
-  CardMedia,
-  Container,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Box, CardMedia, Container, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 
 import BackEndView from "./backEnd/BackEndView";
@@ -22,7 +15,7 @@ import "./resume.css";
 
 export default function ResumeView(dev) {
   return (
-    <CardMedia image="./images/pexels-hasan-albari-1229861.jpg">
+    <Container maxWidth={"100%"} margin={0} className={"resume-background"}>
       <Box display={"flex"} justifyContent={"center"}>
         {/* MAIN BOX with name and info*/}
         <Box maxWidth={"820px"}>
@@ -45,7 +38,9 @@ export default function ResumeView(dev) {
 
             {/* DOMÍNIO */}
             <Grid display={"flex"} justifyContent={"center"} margin={"10px"}>
-              <Typography className="titles">DOMINIO</Typography>
+              <Typography variant="h6" className="titles">
+                DOMINIO
+              </Typography>
             </Grid>
 
             <Grid container columns={21}>
@@ -79,6 +74,6 @@ export default function ResumeView(dev) {
           </Paper>
         </Box>
       </Box>
-    </CardMedia>
+    </Container>
   );
 }

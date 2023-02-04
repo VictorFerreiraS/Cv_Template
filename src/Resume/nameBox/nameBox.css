@@ -2,3 +2,8 @@
   height: 2px;
   background: radial-gradient(gray, transparent);
 }
+
+.name-box{
+  margin: 30px;
+  padding: 10px;  
+}

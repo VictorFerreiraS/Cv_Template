@@ -1,9 +1,32 @@
 import React from "react";
+import ResumeView from "./ResumeView";
+
+import "./resume.css";
+
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Poppins",
+    h4: {
+      fontSize: "20px",
+    },
+    h6: {
+      fontSize: "16px",
+      letterSpacing: "5px",
+    },
+    body1: {
+      fontSize: "14px",
+    },
+  },
+});
 
 export default function ResumeController() {
   return (
-    <div>
-      <ResumeView dev={dev} />
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <ResumeView />
+      </ThemeProvider>
+    </>
   );
 }

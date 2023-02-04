@@ -9,19 +9,21 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 export default function PersonalInfoView() {
   return (
     <Box>
-      <Typography className="titles">DADOS PESSOAIS</Typography>
+      <Typography variant="h6">
+        DADOS PESSOAIS
+      </Typography>
       <Box>
         <PersonOutlineOutlinedIcon />
-        <Typography>19 anos </Typography>
-        <Typography>São João del Rei - MG </Typography>
+        <Typography variant="body1">19 anos </Typography>
+        <Typography variant="body1">São João del Rei - MG </Typography>
       </Box>
       <Box>
         <PhoneAndroidOutlinedIcon />
-        <Typography>(32) 99990-1005</Typography>
+        <Typography variant="body1">(32) 99990-1005</Typography>
       </Box>{" "}
       <Box>
         <LinkedInIcon />
-        <Typography>
+        <Typography variant="body1">
           <Link
             target={"blank"}
             href="https://www.linkedin.com/in/victor-fagundes-ferreira/"
@@ -32,7 +34,7 @@ export default function PersonalInfoView() {
       </Box>
       <Box>
         <GitHubIcon />
-        <Typography>
+        <Typography variant="body1">
           <Link target={"blank"} href="https://github.com/VictorFerreiraS">
             VictorFerreiraS
           </Link>

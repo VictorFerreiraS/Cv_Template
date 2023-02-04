@@ -4,9 +4,11 @@ import React from "react";
 export default function DegreesView() {
   return (
     <Box>
-      <Typography className="titles">FORMAÇÃO</Typography>
-      <Typography>Cursando Ciêcia da Computação</Typography>
-      <Typography>Descomplica Faculdade</Typography>
+      <Typography variant="h6" className="titles">
+        FORMAÇÃO
+      </Typography>
+      <Typography variant="body1">Cursando Ciêcia da Computação</Typography>
+      <Typography variant="body1">Descomplica Faculdade</Typography>
     </Box>
   );
 }
