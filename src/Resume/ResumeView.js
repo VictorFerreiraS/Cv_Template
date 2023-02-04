@@ -1,4 +1,11 @@
-import { Box, CardMedia, Container, Grid, Paper, Typography } from "@mui/material";
+import {
+  Box,
+  CardMedia,
+  Container,
+  Grid,
+  Paper,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
 import BackEndView from "./backEnd/BackEndView";
@@ -20,57 +27,59 @@ export default function ResumeView(dev) {
         {/* MAIN BOX with name and info*/}
         <Box maxWidth={"820px"}>
           {/* Name box */}
-          <Paper>
+          <Paper elevation={3}>
             <NameBoxView />
           </Paper>
 
           {/* INFORMATION BOX */}
-          <Paper>
-            {/* DADOS PESSOAIS E FORMAÇÃO BOX*/}
-            <Grid container>
-              <Grid item md={6} backgroundColor={"blue"}>
-                <PersonalInfoView />
-              </Grid>
-              <Grid item md={6}>
-                <DegreesView />
-              </Grid>
-            </Grid>
-
-            {/* DOMÍNIO */}
-            <Grid display={"flex"} justifyContent={"center"} margin={"10px"}>
-              <Typography variant="h6" className="titles">
-                DOMINIO
-              </Typography>
-            </Grid>
-
-            <Grid container columns={21}>
-              {/* LEFT SIDE */}
-              <Grid item md={10} backgroundColor="green">
-                <Box height={"200px"}>
-                  <BackEndView />
-                </Box>
-                <LanguagesView />
-                <CertificatesView />
+          <Paper elevation={3}>
+            <Box margin={"20px"}>
+              {/* DADOS PESSOAIS E FORMAÇÃO BOX*/}
+              <Grid container>
+                <Grid item md={6}>
+                  <PersonalInfoView />
+                </Grid>
+                <Grid item md={6}>
+                  <DegreesView />
+                </Grid>
               </Grid>
 
-              {/* CENTRAL LINE */}
-              <Grid item md={1} align={"center"}>
-                <Box width={"2px"} className="central-line" />
+              {/* DOMÍNIO */}
+              <Grid display={"flex"} justifyContent={"center"} margin={"10px"}>
+                <Typography variant="h6" className="titles">
+                  DOMINIO
+                </Typography>
               </Grid>
 
-              {/* RIGHT SIDE */}
-              <Grid item md={10}>
-                <Box height={"200px"}>
-                  <FrontEndView />
-                </Box>
-                <ProjectsView />
-              </Grid>
-            </Grid>
+              <Grid container columns={21}>
+                {/* LEFT SIDE */}
+                <Grid item md={10}>
+                  <Box height={"200px"}>
+                    <BackEndView />
+                  </Box>
+                  <LanguagesView />
+                  <CertificatesView />
+                </Grid>
 
-            <Grid>
-              {/* CONHECIMENTOS E INTERESSES  */}
-              <KnowledgeAndInterests />
-            </Grid>
+                {/* CENTRAL LINE */}
+                <Grid item md={1} align={"center"}>
+                  <Box width={"2px"} className="central-line" />
+                </Grid>
+
+                {/* RIGHT SIDE */}
+                <Grid item md={10}>
+                  <Box height={"200px"}>
+                    <FrontEndView />
+                  </Box>
+                  <ProjectsView />
+                </Grid>
+              </Grid>
+
+              <Grid>
+                {/* CONHECIMENTOS E INTERESSES  */}
+                <KnowledgeAndInterests />
+              </Grid>
+            </Box>
           </Paper>
         </Box>
       </Box>
