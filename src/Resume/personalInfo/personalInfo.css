@@ -1,4 +1,10 @@
 .icons {
-  margin: 10px;
+  margin: 20px;
   transform: scale(1.5);
+}
+
+.brazil-flag {
+  margin: 5px;
+  margin-top: 15px;
+  width: 24px;
 }

@@ -1,19 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
-.resume-background {
-  background-image: url(../images/mohammad-rahmani-6tG4sQx0dh4-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .central-line {
   width: 2px;
   height: 100%;
   background: radial-gradient(gray, transparent);
 }
 
-.information-wraper {
-  margin: 20px;
-  background-color: green;
+.content-wraper {
+  padding: 25px;
+  margin-bottom: 30px;
 }

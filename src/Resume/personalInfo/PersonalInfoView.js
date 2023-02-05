@@ -5,12 +5,13 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import PhoneAndroidOutlinedIcon from "@mui/icons-material/PhoneAndroidOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import {ReactComponent as BrazilFlag} from "../../images/brazil-flag-icon.svg"
 
 import "./personalInfo.css";
 
 export default function PersonalInfoView() {
   return (
-    <Box >
+    <Box>
       <Typography variant="h6">DADOS PESSOAIS</Typography>
       <Box className="age" display={"flex"} alignItems={"center"}>
         <PersonOutlineOutlinedIcon className="icons" />
@@ -18,6 +19,7 @@ export default function PersonalInfoView() {
           <Typography variant="body1">19 anos </Typography>
           <Typography variant="body1">São João del Rei - MG </Typography>
         </Box>
+        <BrazilFlag className="brazil-flag"/>
       </Box>
       <Box display={"flex"}>
         <PhoneAndroidOutlinedIcon className="icons" />

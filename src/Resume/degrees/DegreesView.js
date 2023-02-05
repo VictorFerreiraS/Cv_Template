@@ -3,7 +3,7 @@ import React from "react";
 
 export default function DegreesView() {
   return (
-    <Box margin={"20px"}>
+    <Box>
       <Typography variant="h6" className="titles">
         FORMAÇÃO
       </Typography>

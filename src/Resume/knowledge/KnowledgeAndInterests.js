@@ -3,13 +3,13 @@ import React from "react";
 
 export default function KnowledgeAndInterests() {
   return (
-    <Box display={"flex"} justifyContent={"center"}>
+    <Box
+      paddingTop={"10px"}
+    >
       <Box>
-        <Typography variant="h6"> CONHECIMENTOS E INTERESSES </Typography>
+        <Typography variant="h6"> CONHECIMENTOS E INTERESSES: </Typography>
         <Typography variant="body1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          sapiente error delectus quasi quaerat ipsum doloribus eveniet
-          perspiciatis a officiis!
+            Git, docker
         </Typography>
       </Box>
     </Box>

@@ -22,18 +22,20 @@ import "./resume.css";
 
 export default function ResumeView(dev) {
   return (
-    <Container maxWidth={"100%"} margin={0} className={"resume-background"}>
       <Box display={"flex"} justifyContent={"center"}>
+
         {/* MAIN BOX with name and info*/}
-        <Box maxWidth={"820px"}>
+        <Box width={"800px"}>
           {/* Name box */}
           <Paper elevation={3}>
             <NameBoxView />
           </Paper>
 
           {/* INFORMATION BOX */}
-          <Paper elevation={3}>
-            <Box margin={"20px"}>
+          <Paper elevation={3} className="content-container">
+            {/* CONTENT WRAPER */}
+
+            <Box className="content-wraper">
               {/* DADOS PESSOAIS E FORMAÇÃO BOX*/}
               <Grid container>
                 <Grid item md={6}>
@@ -47,7 +49,7 @@ export default function ResumeView(dev) {
               {/* DOMÍNIO */}
               <Grid display={"flex"} justifyContent={"center"} margin={"10px"}>
                 <Typography variant="h6" className="titles">
-                  DOMINIO
+                  DOMÍNIO
                 </Typography>
               </Grid>
 
@@ -83,6 +85,5 @@ export default function ResumeView(dev) {
           </Paper>
         </Box>
       </Box>
-    </Container>
   );
 }

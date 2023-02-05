@@ -19,6 +19,9 @@ const theme = createTheme({
       fontSize: "12px",
     },
   },
+  paper: {
+    borderRadious: "40px",
+  },
 });
 
 export default function ResumeController() {
