@@ -3,7 +3,8 @@ import React from "react";
 
 export default function CertificatesView() {
   return (
-    <Box>
+    <Box marginTop={"10px"} >
+      <Typography variant="h6">CERTIFICADOS </Typography>
       <Typography variant="body1">Linkedin 4</Typography>
       <Typography variant="body1">Destaques: React, Java POO</Typography>
     </Box>
