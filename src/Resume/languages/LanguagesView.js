@@ -7,7 +7,7 @@ export default function LanguagesView() {
       <Typography variant="h6" className="titles">
         IDIOMAS:
       </Typography>
-      <Typography variant="body1">Inglês</Typography>
+      <Typography variant="body1">Inglês:</Typography>
       <Typography variant="body1">FALA: Avançado</Typography>
       <Typography variant="body1">Leitura: Fluida</Typography>
       <Typography variant="body1">Compreensão: Fuida</Typography>
