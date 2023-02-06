@@ -1,11 +1,4 @@
-import {
-  Box,
-  CardMedia,
-  Container,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 
 import BackEndView from "./backEnd/BackEndView";

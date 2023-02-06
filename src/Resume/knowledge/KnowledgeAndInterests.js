@@ -9,9 +9,10 @@ export default function KnowledgeAndInterests() {
       <Box>
         <Typography variant="h6"> CONHECIMENTOS E INTERESSES: </Typography>
         <Typography variant="body1">
-            Git, docker
+            Git, Docker, Agular, Vue, python, Node, Typescript, Firebase, Firebase Auth
         </Typography>
       </Box>
     </Box>
   );
 }
+
