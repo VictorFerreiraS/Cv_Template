@@ -5,12 +5,12 @@ export default function LanguagesView() {
   return (
     <Box>
       <Typography variant="h6" className="titles">
-        IDIOMAS
+        IDIOMAS:
       </Typography>
       <Typography variant="body1">Inglês</Typography>
       <Typography variant="body1">FALA: Avançado</Typography>
-      <Typography variant="body1">Inglês: Avançado</Typography>
-      <Typography variant="body1">Inglês: Avançado</Typography>
+      <Typography variant="body1">Leitura: Fluida</Typography>
+      <Typography variant="body1">Compreensão: Fuida</Typography>
     </Box>
   );
 }
