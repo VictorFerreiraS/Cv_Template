@@ -25,6 +25,11 @@ export default function ProjectsView() {
             Former Apple Landing Page
           </Link>
         </Typography>
+        <Typography variant="body1" display={"flex"} justifyContent="flex-end">
+          <Link href="https://github.com/VictorFerreiraS/Resume">
+            Esse currículo
+          </Link>
+        </Typography>
       </Box>
     </Box>
   );
