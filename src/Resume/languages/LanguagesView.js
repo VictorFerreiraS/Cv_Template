@@ -1,16 +1,18 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function LanguagesView() {
+  const {t} = useTranslation()
   return (
     <Box>
       <Typography variant="h6" className="titles">
-        IDIOMAS:
+        {t("idiomas")}
       </Typography>
-      <Typography variant="body1">Inglês:</Typography>
-      <Typography variant="body1">FALA: Avançado</Typography>
-      <Typography variant="body1">Leitura e Escrita: Avançadas</Typography>
-      <Typography variant="body1">Compreensão: Fuida</Typography>
+      <Typography variant="body1">{t("ingles")} </Typography>
+      <Typography variant="body1">{t("falAvc")}</Typography>
+      <Typography variant="body1">{t("leiEsc")}</Typography>
+      <Typography variant="body1">{t("comFlu")}</Typography>
     </Box>
   );
 }

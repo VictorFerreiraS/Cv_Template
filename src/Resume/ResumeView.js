@@ -1,5 +1,6 @@
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import BackEndView from "./backEnd/BackEndView";
 import CertificatesView from "./certificates/CertificatesView";
@@ -14,6 +15,8 @@ import ProjectsView from "./projects/ProjectsView";
 import "./resume.css";
 
 export default function ResumeView(dev) {
+  const {t} = useTranslation()
+
   return (
     <Box display={"flex"} justifyContent={"center"}>
       {/* MAIN BOX with name and info*/}
@@ -41,7 +44,7 @@ export default function ResumeView(dev) {
             {/* DOMÍNIO */}
             <Grid display={"flex"} justifyContent={"center"} margin={"10px"}>
               <Typography variant="h6" className="titles">
-                DOMÍNIO
+                {t("dominio")}
               </Typography>
             </Grid>
 

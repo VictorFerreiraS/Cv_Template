@@ -3,7 +3,17 @@
   background: radial-gradient(gray, transparent);
 }
 
-.name-box{
+.name-box {
   margin: 30px;
-  padding: 10px;  
+  padding: 10px;
+}
+
+.flag-button {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.switch-button:disabled {
+  color: green;
 }

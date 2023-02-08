@@ -3,6 +3,8 @@ import ResumeView from "./ResumeView";
 
 import "./resume.css";
 
+import "./i18n/i18n"
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
