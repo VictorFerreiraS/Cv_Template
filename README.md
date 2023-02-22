@@ -1,7 +1,7 @@
 - Este é o template para o meu currículo, fique a vontade para clonar esse repositorio.
 - Todo o projeto foi feito com React, Material Ui e para internacionalização i18next.
-- A divisão dos componentes é realativamente simples: (View para jsx e Controller pra metodos), contendo todos componentes separadosem pastas.
-- Será necessario um leve conhecimento de material ui 18next e css grid dentro de MUI.
+- A divisão dos componentes é realativamente simples: (View para jsx e Controller pra metodos), contendo todos componentes separados em pastas.
+- Será necessário um leve conhecimento de material ui 18next e css grid dentro de MUI.
 - O deploy pode ser feito com firebase (ja está no package.json).
 
 Tutoriais que me ajudaram:
